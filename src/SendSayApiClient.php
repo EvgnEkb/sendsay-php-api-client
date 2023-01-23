@@ -11,7 +11,6 @@ class SendSayApiClient
     private String $password;
     private String $groupId;
     private String $session;
-    private Array $customFieldsSubscriber;
 
 
     public function __construct(String $url, String $login, String $password, String $groupId)
@@ -85,31 +84,10 @@ class SendSayApiClient
                 ]
             ]
         ];
-        
-        foreach($this->customFieldsSubscriber as $item)
-        {
-            $data['datakey'][] = $item;
-        }
 
         $result = $this->sendRequest($data);
 
         return $result;
-    }
-
-    /**
-     * Заполнить кастомное поле
-     *
-     * @param String $key
-     * @param String $value
-     * @return void
-     */
-    public function addCustomField(String $key, String $value)
-    {
-        $this->customFieldsSubscriber[] = [
-            "custom.{$key}",
-            "set",
-            $value
-        ];
     }
 
 }

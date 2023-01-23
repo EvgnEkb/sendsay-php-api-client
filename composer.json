@@ -1,6 +1,6 @@
 {
     "name": "evgeny/sendsay-php-api-client",
-    "description": "Php пакет для раоты с api сервиса Send Say",
+    "description": "Php пакет для добавления подписчика в сервис SendSay по api",
     "autoload": {
         "psr-4": {
             "Evgeny\\SendsayPhpApiClient\\": "src/"
