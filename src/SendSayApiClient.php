@@ -28,7 +28,7 @@ class SendSayApiClient
      * @param array $data
      * @return mixed
      */
-    public function sendRequest(Array $data) : mixed
+    public function sendRequest(Array $data)
     {
         $ch = curl_init($this->url);
         $payload = json_encode($data);
