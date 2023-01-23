@@ -2,7 +2,7 @@
 Php пакет для раоты с api сервиса Send Say.
 
 ```
-composer require evgeny/sendsay-php-api-client
+composer require evgeny/sendsay-php-api-client:dev-main
 ```
 
 Возможности:
