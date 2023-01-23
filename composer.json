@@ -1,0 +1,16 @@
+{
+    "name": "evgeny/sendsay-php-api-client",
+    "description": "Php пакет для раоты с api сервиса Send Say",
+    "autoload": {
+        "psr-4": {
+            "Evgeny\\SendsayPhpApiClient\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Евгений Шарафетдинов",
+            "email": "evgn.ekb@gmail.com"
+        }
+    ],
+    "require": {}
+}
